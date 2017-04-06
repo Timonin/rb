@@ -1,0 +1,96 @@
+groups:
+  default:
+    permissions:
+    - modifyworld.*
+    - authme.player.register
+    - authme.player.login
+    - authme.player.changepassword
+    - automessage.receive.default
+    - essentials.kits.start
+    - essentials.build
+    - essentials.help.worldedit
+    - essentials.balance
+    - essentials.kit
+    - essentials.pay
+    - essentials.kit
+    - essentials.motd
+    - essentials.msg
+    - essentials.list
+    - essentials.rules
+    - essentials.spawn
+    - essentials.home
+    - essentials.sethome
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.delhome
+    - essentials.tpa
+    - essentials.warp
+    - essentials.recipe
+    - worldedit.selection.pos
+    - worldedit.selection.hpos
+    - worldedit.wand
+    - worldedit.selection.expand
+    - worldguard.region.claim
+    - worldguard.region.info.own.*
+    - worldguard.region.addowner.own.*
+    - worldguard.region.removeowner.own.*
+    - worldguard.region.addmember.own.*
+    - worldguard.region.removemember.own.*
+    - worldguard.region.list.own
+    - worldguard.region.remove.own.*
+    - worldguard.region.wand
+    - worldguard.region.flag.own.pvp
+    - worldguard.region.flag.own.use
+    - worldguard.region.flag.own.chest-access
+    options:
+      prefix: '&7'
+      default: true
+  vip:
+    inheritance:
+    - default
+    permissions:
+    - essentials.kits.vip
+    - essentials.sethome.multiple.vip
+    - essentials.god
+    - essentials.fly
+    - essentials.feed
+    - essentials.heal
+    - essentials.hat
+    options:
+      prefix: '&6[&eВ&6]&e '
+      suffix: ''
+      default: false
+  prem:
+    inheritance:
+    - default
+    - vip
+    permissions:
+    - essentials.kits.premium
+    - essentials.gamemode
+    - essentials.sethome.multiple.premium
+    options:
+      prefix: '&2[&aП&2]&a '
+      suffix: '&F'
+      default: false
+  mod:
+    inheritance:
+    - default
+    - prem
+    - vip
+    permissions:
+    - essentials.*
+    - worldedit.*
+    - worldguard.*
+    options:
+      prefix: '&b[&3МОД&b]&3 '
+      default: false
+  own:
+    inheritance:
+    - default
+    permissions:
+    - '*'
+    options:
+      prefix: '&4[&cОвн.&4] '
+      suffix: ' &c[!]'
+      default: false
+schema-version: 1

@@ -1,0 +1,49 @@
+claim:
+  vertexpand:
+    enabled: false
+  blocklimits:
+    enabled: false
+    limits:
+      default: 45000
+      vip: 90000
+      deluxe: 180000
+      premium: 360000
+regionprotect:
+  flow:
+    lava:
+      enabled: true
+    water:
+      enabled: false
+    otherliquid:
+      enabled: false
+  ignitebyplayer:
+    enabled: true
+  fire:
+    spread:
+      toregion:
+        enabled: false
+      inregion:
+        enabled: true
+    burn:
+      enabled: true
+  explosion:
+    block:
+      enabled: true
+    entity:
+      enabled: true
+  pistonmove:
+    enabled: true
+autoflags:
+  enabled: true
+  flags:
+    use: deny
+    enderman-grief: deny
+    creeper-explosion: deny
+    pvp: deny
+    lava-fire: deny
+restrictcommands:
+  enabled: true
+  commands:
+  - sethome
+extendedwewand:
+  enabled: false
